@@ -1,6 +1,6 @@
 # Repository Manifest
 
-Generated: 2026-05-06T22:30:22-04:00
+Generated: 2026-05-07T00:29:26-04:00
 
 ## Files
 
@@ -13,6 +13,15 @@ Generated: 2026-05-06T22:30:22-04:00
 - `assets/source_art/.gitkeep`
   - size: 1 bytes
   - sha256: `01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b`
+- `assets/source_art/cerberus-comic-crest-intro.png`
+  - size: 2007590 bytes
+  - sha256: `0559e31850b4ac0ac86d223185c56a232f620ef494845ffe53209d713f90c2f9`
+- `assets/source_art/cerberus-comic-emblem.png`
+  - size: 1617485 bytes
+  - sha256: `4e2dc95a759a85350da996f98728c5866dc5226817eb7dc24f90c80ef696efc9`
+- `assets/source_art/cerberus-comic-loop-roar.png`
+  - size: 2254251 bytes
+  - sha256: `9a102cfdc422365534aec66ca83ec10bcbe5af889d4e9641915071d8108fcc21`
 - `docs/adb_terminal_workflow.md`
   - size: 1899 bytes
   - sha256: `96c320a49a88d81350900b01cae4dd0e23616c1ff89a8e9078a935153fbf892b`
