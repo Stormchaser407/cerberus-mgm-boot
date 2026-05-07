@@ -1,0 +1,9 @@
+reports/
+downloads/
+bootanimation/part0/*.png
+bootanimation/part1/*.png
+magisk-module/system/media/bootanimation.zip
+magisk-module/system/product/media/bootanimation.zip
+.DS_Store
+*.tmp
+*.bak
