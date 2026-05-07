@@ -29,3 +29,33 @@ Current target:
 Do not overwrite system files directly.
 
 Boot animations should be installed as Magisk modules so they remain reversible, disable-able, and recoverable.
+
+## Repository Workflow
+
+Sync docs to the Obsidian mirror:
+
+```sh
+./scripts/sync_to_obsidian.sh
+```
+
+Regenerate the repository manifest:
+
+```sh
+./scripts/write_manifest.sh
+```
+
+Add GitHub and Codeberg remotes after creating empty repos:
+
+```sh
+GITHUB_URL="git@github.com:USERNAME/cerberus-mgm-boot.git" \
+CODEBERG_URL="git@codeberg.org:USERNAME/cerberus-mgm-boot.git" \
+./scripts/add_remotes.sh
+```
+
+Push configured mirrors:
+
+```sh
+./scripts/sync_git.sh
+```
+
+Mirror remotes should be named `github` and `codeberg`.

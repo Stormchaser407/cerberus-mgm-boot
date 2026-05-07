@@ -10,7 +10,11 @@ OUT="readme_manifest.md"
   echo
   echo "## Files"
   echo
-  find . -path ./.git -prune -o -type f -print | sort | while read -r file; do
+  find . \
+    -path ./.git -prune -o \
+    -path ./reports -prune -o \
+    -name "$OUT" -prune -o \
+    -type f -print | sort | while read -r file; do
     sha="$(sha256sum "$file" | awk "{print \$1}")"
     size="$(stat -c "%s" "$file")"
     echo "- \`${file#./}\`"

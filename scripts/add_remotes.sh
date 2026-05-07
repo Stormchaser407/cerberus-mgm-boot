@@ -4,6 +4,8 @@ set -euo pipefail
 GITHUB_URL="${GITHUB_URL:-}"
 CODEBERG_URL="${CODEBERG_URL:-}"
 
+git rev-parse --show-toplevel >/dev/null
+
 if [ -z "$GITHUB_URL" ] || [ -z "$CODEBERG_URL" ]; then
   echo "Set both remotes first:"
   echo
@@ -13,6 +15,7 @@ if [ -z "$GITHUB_URL" ] || [ -z "$CODEBERG_URL" ]; then
   exit 1
 fi
 
+echo "Replacing github/codeberg/origin remotes for this repository."
 git remote remove github 2>/dev/null || true
 git remote remove codeberg 2>/dev/null || true
 git remote remove origin 2>/dev/null || true

@@ -1,9 +1,15 @@
 # Repository Manifest
 
-Generated: 2026-05-06T22:05:58-04:00
+Generated: 2026-05-06T22:10:04-04:00
 
 ## Files
 
+- `.gitignore`
+  - size: 192 bytes
+  - sha256: `c5aab6dae4c42e073e74c4bfef6638535d41c7fa1b108d0ebd3484f7e729a2b0`
+- `README.md`
+  - size: 1303 bytes
+  - sha256: `7422f8f9c7d18d1b3560a6af1da2d1b3c2b6ba0be0bf2f9880c48fa3308cfcda`
 - `docs/bootanimation_structure.md`
   - size: 568 bytes
   - sha256: `b65e9bfad590344eba0c5f25b360737dd94525063f6aa26ea22451ffcdf498bd`
@@ -22,24 +28,18 @@ Generated: 2026-05-06T22:05:58-04:00
 - `docs/prompt_bank.md`
   - size: 1447 bytes
   - sha256: `fbb5f9716eb585f7e6ee0547abdcc7a0c01e3499696be052230be28184fda24f`
-- `.gitignore`
-  - size: 192 bytes
-  - sha256: `c5aab6dae4c42e073e74c4bfef6638535d41c7fa1b108d0ebd3484f7e729a2b0`
-- `readme_manifest.md`
-  - size: 940 bytes
-  - sha256: `7e422c6348f9ded66714a0f8104dd615550e54f9a8e8eec8c01fbe3fb1ab1942`
-- `README.md`
-  - size: 788 bytes
-  - sha256: `31cc9a3201176c4c061d034dbba013b1413718168ae27d777535131a78724ea6`
+- `docs/repo_sync_runbook.md`
+  - size: 2144 bytes
+  - sha256: `727b09f853e48102bc0a256e596cce4f813891231347d938e6a4040afcca3e49`
 - `scripts/add_remotes.sh`
-  - size: 624 bytes
-  - sha256: `1a03a4454c945cc51ad60c969bb7dbb2ed5df656c643c4f5921bd72928f75f72`
+  - size: 735 bytes
+  - sha256: `24a4ed684b935a533facce77708d83a49e74af7d6bab29f6fdb04add2603e284`
 - `scripts/sync_git.sh`
-  - size: 487 bytes
-  - sha256: `1a12a315ced10352af543af1c21c855175347dc2a7b765a27741717f05ce3399`
+  - size: 1391 bytes
+  - sha256: `7c0ce99bc170f91528f1509625b9d0ba9429c592e4dc6255e19ae8b4a008a779`
 - `scripts/sync_to_obsidian.sh`
-  - size: 869 bytes
-  - sha256: `6ce7472cf76c0f82bc700c745dc7a365a2f138b19f6b8b86f80e5bc904f1c399`
+  - size: 944 bytes
+  - sha256: `8b72b359a350d59c627f3e77cc939ffbea0986cdd142d25c384e1b754b2c8267`
 - `scripts/write_manifest.sh`
-  - size: 464 bytes
-  - sha256: `4c2f21a611c58aec5d73bc216e8bd5b3f9714473b14d18e4c53aea457dd47659`
+  - size: 537 bytes
+  - sha256: `c83e9b0063e3af3d1e9c46af8bb764fa78d3f11623ea64be7c9776e8da99fbf9`
