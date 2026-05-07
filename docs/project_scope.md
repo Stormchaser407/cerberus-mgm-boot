@@ -36,12 +36,20 @@ Temporary procedural placeholder frames are allowed only for packaging tests and
 - explicitly authorized image generation
 - hand-drawn or vector assets created in a separate deliberate art-production step
 
+See [[art_production_handoff]] for the art intake and approval model.
+
 ## Primary Paths
 
 Repo:
 
 ```text
 /mnt/storage/Cole/Projects/cerberus-mgm-boot
+```
+
+Source art intake folder:
+
+```text
+/mnt/storage/Cole/Projects/cerberus-mgm-boot/assets/source_art
 ```
 
 Pixel lab reference folder:

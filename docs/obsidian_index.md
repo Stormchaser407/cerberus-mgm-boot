@@ -30,6 +30,7 @@ A terminal-first project for building a reversible Magisk boot animation module 
 - [[adb_terminal_workflow]]
 - [[repo_sync_runbook]]
 - [[tasker_macrodroid_plan]]
+- [[art_production_handoff]]
 
 ## Related Local Paths
 

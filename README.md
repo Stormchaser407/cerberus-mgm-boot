@@ -69,6 +69,16 @@ Verify module staging:
 ./scripts/verify_module_adb.sh
 ```
 
+Art intake:
+
+```text
+assets/source_art/      # source artwork inputs
+bootanimation/part0/    # final intro frame PNGs
+bootanimation/part1/    # final loop frame PNGs
+```
+
+Art generation is not run by default in this repo. See [[art_production_handoff]] in docs for approved final-art paths.
+
 Disable or re-enable the module with Magisk flags:
 
 ```sh

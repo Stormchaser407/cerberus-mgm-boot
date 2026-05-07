@@ -26,6 +26,7 @@ copy_doc "docs/repo_sync_runbook.md" "repo_sync_runbook.md"
 copy_doc "docs/adb_terminal_workflow.md" "adb_terminal_workflow.md"
 copy_doc "docs/magisk_bootanimation_module.md" "magisk_bootanimation_module.md"
 copy_doc "docs/tasker_macrodroid_plan.md" "tasker_macrodroid_plan.md"
+copy_doc "docs/art_production_handoff.md" "art_production_handoff.md"
 copy_doc "README.md" "README.md"
 
 cat > "$VAULT_DIR/_sync_status.md" <<STATUS
