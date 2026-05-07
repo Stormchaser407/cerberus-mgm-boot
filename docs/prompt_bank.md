@@ -1,4 +1,17 @@
+---
+project: Cerberus MGM Boot
+type: project-doc
+status: active
+tags:
+  - cerberus
+  - boot-animation
+  - art-direction
+  - prompt-bank
+---
+
 # Prompt Bank
+
+Related docs: [[concept]], [[frame_plan]], [[project_scope]]
 
 No image generation has been performed in this repo.
 

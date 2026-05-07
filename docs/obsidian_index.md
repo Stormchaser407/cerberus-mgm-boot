@@ -12,17 +12,9 @@ tags:
 
 # Cerberus MGM Boot
 
-A boot animation project for the rooted Pixel / Cerberus phone build.
+A terminal-first project for building a reversible Magisk boot animation module and maintaining the mirrored Obsidian documentation set.
 
-## Core Idea
-
-A Cerberus spin on the classic movie-studio lion intro: three-headed guardian dog, circular crest, one roaring head, one sentinel head, one cigar-smoking old bastard head.
-
-## Local Repo
-
-    /mnt/storage/Cole/Projects/cerberus-mgm-boot
-
-## Key Docs
+## Core Docs
 
 - [[concept]]
 - [[frame_plan]]
@@ -30,14 +22,35 @@ A Cerberus spin on the classic movie-studio lion intro: three-headed guardian do
 - [[bootanimation_structure]]
 - [[production_notes]]
 
-## Current Status
+## Technical Docs
 
-Local repo scaffold created. No final image generation or animation frames yet.
+- [[project_scope]]
+- [[current_device_state]]
+- [[magisk_bootanimation_module]]
+- [[adb_terminal_workflow]]
+- [[repo_sync_runbook]]
+- [[tasker_macrodroid_plan]]
 
-## Next Actions
+## Related Local Paths
 
-- Decide exact visual style
-- Create first actual frame assets
-- Build bootanimation.zip
-- Package Magisk module
-- Test install
+Repo:
+
+```text
+/mnt/storage/Cole/Projects/cerberus-mgm-boot
+```
+
+Pixel lab:
+
+```text
+/mnt/storage/Cole/Projects/pixel-root-lab
+```
+
+Obsidian mirror:
+
+```text
+/mnt/storage/Cole/main_vault/Projects/Cerberus MGM Boot
+```
+
+## Current Boundary
+
+This repo is building the pipeline only. Final Cerberus artwork is not generated here unless the user later provides source art, explicitly authorizes image generation, or starts a separate art-production step.

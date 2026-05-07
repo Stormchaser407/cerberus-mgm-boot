@@ -1,17 +1,37 @@
+---
+project: Cerberus MGM Boot
+type: project-doc
+status: active
+tags:
+  - cerberus
+  - git
+  - codeberg
+  - github
+  - obsidian
+---
+
 # Repository Sync Runbook
+
+Related docs: [[project_scope]], [[adb_terminal_workflow]], [[magisk_bootanimation_module]]
 
 ## Paths
 
 Local repo:
 
-```sh
+```text
 /mnt/storage/Cole/Projects/cerberus-mgm-boot
 ```
 
 Obsidian mirror:
 
-```sh
+```text
 /mnt/storage/Cole/main_vault/Projects/Cerberus MGM Boot
+```
+
+Pixel lab reference folder:
+
+```text
+/mnt/storage/Cole/Projects/pixel-root-lab
 ```
 
 ## Sync Docs To Obsidian
@@ -22,7 +42,7 @@ From the repo root:
 ./scripts/sync_to_obsidian.sh
 ```
 
-This copies the curated documentation set and `README.md` into the Obsidian mirror, then writes `_sync_status.md`. It does not delete unrelated files in the Obsidian folder.
+The sync is docs-only. It copies curated Markdown documentation and `README.md`, writes `_sync_status.md`, and does not delete unrelated files in the Obsidian folder.
 
 ## Regenerate Manifest
 
@@ -32,9 +52,9 @@ From the repo root:
 ./scripts/write_manifest.sh
 ```
 
-This rewrites `readme_manifest.md` with repository file paths, sizes, and sha256 hashes. The manifest excludes `.git`, transient `reports/` output, and the generated manifest file itself.
+The manifest includes repository source files with sizes and sha256 hashes. It excludes `.git`, `reports/`, `downloads/`, generated build output, generated frame PNGs, and generated ZIP payloads.
 
-## Add Git Remotes
+## Add GitHub And Codeberg Remotes
 
 Create empty repositories on GitHub and Codeberg first, then run:
 
@@ -44,10 +64,12 @@ CODEBERG_URL="git@codeberg.org:USERNAME/cerberus-mgm-boot.git" \
 ./scripts/add_remotes.sh
 ```
 
-The script replaces old `github`, `codeberg`, and `origin` remotes, then adds the named mirror remotes:
+Remote names:
 
-- `github`
-- `codeberg`
+- `main` = GitHub
+- `codeberg` = Codeberg
+
+The helper replaces old `origin`, `github`, `main`, and `codeberg` remotes before adding the current pair.
 
 ## Push Mirrors
 
@@ -57,35 +79,33 @@ From the repo root:
 ./scripts/sync_git.sh
 ```
 
-The script detects the current branch and pushes it to any configured `github` and `codeberg` remotes. If one mirror is missing, it reports that and still pushes the configured mirror. If both are missing, it exits with setup instructions.
+The script detects the current branch and pushes to configured mirrors. If one mirror is missing, it reports that cleanly and still handles the configured mirror. If both are missing, it exits with setup instructions.
 
 ## Recovery If A Push Fails
 
-1. Check configured remotes:
+Check remotes:
 
 ```sh
 git remote -v
 ```
 
-2. Confirm the destination repository exists and the URL is correct.
+Confirm the destination repository exists and the URL is correct. Re-run `add_remotes.sh` if either URL is wrong.
 
-3. Re-run the remote setup command if either URL is wrong.
-
-4. If authentication failed, fix SSH access for the host that failed, then retry:
+If authentication failed, fix SSH access for the host that failed, then retry:
 
 ```sh
 ./scripts/sync_git.sh
 ```
 
-5. If the remote contains unexpected commits, inspect before forcing anything:
+If the remote contains unexpected commits, inspect before forcing anything:
 
 ```sh
 git fetch --all --prune
 git status
 ```
 
-Do not force-push unless you have intentionally decided the remote history should be replaced.
+Do not force-push unless you intentionally decide the remote history should be replaced.
 
 ## Safety Boundary
 
-Repository sync is documentation and Git setup only. Image generation, phone installs, and direct phone system file writes are not part of this workflow.
+Repository sync is documentation and Git setup only. Image generation, phone installs, direct system partition writes, and automatic reboots are not part of repo sync.

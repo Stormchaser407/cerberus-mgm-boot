@@ -1,5 +1,8 @@
 reports/
 downloads/
+build/
+bootanimation/bootanimation.zip
+bootanimation/desc.txt
 bootanimation/part0/*.png
 bootanimation/part1/*.png
 magisk-module/system/media/bootanimation.zip

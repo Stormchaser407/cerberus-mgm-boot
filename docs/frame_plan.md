@@ -1,4 +1,18 @@
+---
+project: Cerberus MGM Boot
+type: project-doc
+status: active
+tags:
+  - cerberus
+  - magisk
+  - boot-animation
+  - rooted-pixel
+  - animation-plan
+---
+
 # Frame Plan
+
+Related docs: [[concept]], [[bootanimation_structure]], [[magisk_bootanimation_module]]
 
 Target bootanimation format:
 

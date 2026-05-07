@@ -1,10 +1,25 @@
+---
+project: Cerberus MGM Boot
+type: project-doc
+status: active
+tags:
+  - cerberus
+  - magisk
+  - boot-animation
+  - production
+---
+
 # Production Notes
+
+Related docs: [[project_scope]], [[magisk_bootanimation_module]], [[repo_sync_runbook]]
 
 ## Project Rule
 
 No direct system file overwrites.
 
 Everything should be built as a reversible Magisk module.
+
+Do not generate final Cerberus artwork during pipeline work. Temporary procedural placeholders are allowed only for packaging tests and must be labeled as temporary test art.
 
 ## Current Pipeline
 

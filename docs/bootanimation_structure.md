@@ -1,4 +1,17 @@
+---
+project: Cerberus MGM Boot
+type: project-doc
+status: active
+tags:
+  - cerberus
+  - magisk
+  - boot-animation
+  - android
+---
+
 # Boot Animation Structure
+
+Related docs: [[frame_plan]], [[magisk_bootanimation_module]], [[adb_terminal_workflow]]
 
 Android boot animations use a ZIP file named:
 

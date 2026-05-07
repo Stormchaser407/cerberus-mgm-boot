@@ -15,12 +15,17 @@ if [ -z "$GITHUB_URL" ] || [ -z "$CODEBERG_URL" ]; then
   exit 1
 fi
 
-echo "Replacing github/codeberg/origin remotes for this repository."
-git remote remove github 2>/dev/null || true
-git remote remove codeberg 2>/dev/null || true
+echo "Replacing origin/github/main/codeberg remotes for this repository."
 git remote remove origin 2>/dev/null || true
+git remote remove github 2>/dev/null || true
+git remote remove main 2>/dev/null || true
+git remote remove codeberg 2>/dev/null || true
 
-git remote add github "$GITHUB_URL"
+echo "Adding GitHub remote as: main"
+git remote add main "$GITHUB_URL"
+
+echo "Adding Codeberg remote as: codeberg"
 git remote add codeberg "$CODEBERG_URL"
 
+echo
 git remote -v

@@ -1,3 +1,14 @@
+---
+project: Cerberus MGM Boot
+type: readme
+status: active
+tags:
+  - cerberus
+  - magisk
+  - boot-animation
+  - rooted-pixel
+---
+
 # Cerberus MGM Boot
 
 A systemless Magisk boot animation project for the rooted Pixel / Cerberus phone build.
@@ -30,6 +41,41 @@ Do not overwrite system files directly.
 
 Boot animations should be installed as Magisk modules so they remain reversible, disable-able, and recoverable.
 
+Do not generate final Cerberus artwork during pipeline setup. Drop user-provided or separately authorized PNG frames into `bootanimation/part0/` and `bootanimation/part1/`.
+
+## Boot Animation Pipeline
+
+Build `bootanimation.zip` from local PNG frames:
+
+```sh
+./scripts/build_bootanimation_zip.sh
+```
+
+Package the reversible Magisk module:
+
+```sh
+./scripts/package_magisk_module.sh
+```
+
+Install the generated module ZIP through ADB and Magisk:
+
+```sh
+./scripts/install_module_adb.sh
+```
+
+Verify module staging:
+
+```sh
+./scripts/verify_module_adb.sh
+```
+
+Disable or re-enable the module with Magisk flags:
+
+```sh
+./scripts/disable_module_adb.sh
+./scripts/enable_module_adb.sh
+```
+
 ## Repository Workflow
 
 Sync docs to the Obsidian mirror:
@@ -58,4 +104,4 @@ Push configured mirrors:
 ./scripts/sync_git.sh
 ```
 
-Mirror remotes should be named `github` and `codeberg`.
+Mirror remotes should be named `main` for GitHub and `codeberg` for Codeberg.

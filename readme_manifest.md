@@ -1,45 +1,87 @@
 # Repository Manifest
 
-Generated: 2026-05-06T22:10:04-04:00
+Generated: 2026-05-06T22:22:46-04:00
 
 ## Files
 
 - `.gitignore`
-  - size: 192 bytes
-  - sha256: `c5aab6dae4c42e073e74c4bfef6638535d41c7fa1b108d0ebd3484f7e729a2b0`
+  - size: 254 bytes
+  - sha256: `df34bede82dc47d3a208e3a2c9a058947d18dadc91ecb5e30612602cc96666ee`
 - `README.md`
-  - size: 1303 bytes
-  - sha256: `7422f8f9c7d18d1b3560a6af1da2d1b3c2b6ba0be0bf2f9880c48fa3308cfcda`
+  - size: 2133 bytes
+  - sha256: `706de080c4b132ff32ddca0a2a1c27c9b9d3c950907e24cc23cdbeab9480ef71`
+- `docs/adb_terminal_workflow.md`
+  - size: 1899 bytes
+  - sha256: `96c320a49a88d81350900b01cae4dd0e23616c1ff89a8e9078a935153fbf892b`
 - `docs/bootanimation_structure.md`
-  - size: 568 bytes
-  - sha256: `b65e9bfad590344eba0c5f25b360737dd94525063f6aa26ea22451ffcdf498bd`
+  - size: 788 bytes
+  - sha256: `7853de162dfc88f673a3ac0e77c99dc7eab84f0d67651f3771fcfc46a368792b`
 - `docs/concept.md`
-  - size: 1165 bytes
-  - sha256: `e68c5e2e86a82bc7a65bd9a398d4bcfb62efd98ba0809fa6dd85b40917498883`
+  - size: 1384 bytes
+  - sha256: `2fa6547d47cbc4057ad31445277a0bc109a03b087e083d271ea92270ca08fb82`
+- `docs/current_device_state.md`
+  - size: 1642 bytes
+  - sha256: `530d6c357c1428e1015b7fd3e693508520255cbd2421d866250dd859df39715a`
 - `docs/frame_plan.md`
-  - size: 882 bytes
-  - sha256: `933b8d910c91317ec379d259f6e30d88affa657e58a737146f56e50d024c71b5`
+  - size: 1125 bytes
+  - sha256: `cf81a7d4c9b5d585a2d59273da9dc1feacb47f2fdc4231610808ca01dda6a5f7`
+- `docs/magisk_bootanimation_module.md`
+  - size: 2455 bytes
+  - sha256: `675d0379088a5bf8d82c4ba71b2eedb7bfb66bd612b19f72dd3159d478cc1a8d`
 - `docs/obsidian_index.md`
-  - size: 854 bytes
-  - sha256: `8029ba5e8348bd5c8cd98befb4516b2c8d84ff60af0a972c9b112ae43ec96ebf`
+  - size: 1082 bytes
+  - sha256: `61c531360fa8048df31ab6edce641932413db546c8e6652306058ab0cbd1bb90`
 - `docs/production_notes.md`
-  - size: 617 bytes
-  - sha256: `2efaa0db50db2cba176dba5b26ede24ff8596f9727a0b3f28e190bc4f9479185`
+  - size: 1015 bytes
+  - sha256: `addb0783d26f044846833d58d418eaae26412206ec2ee1e422a781d594f1536b`
+- `docs/project_scope.md`
+  - size: 2028 bytes
+  - sha256: `2847fa9b670a11d98464d3759d69ad6492b4c58532566545b2323739e9422188`
 - `docs/prompt_bank.md`
-  - size: 1447 bytes
-  - sha256: `fbb5f9716eb585f7e6ee0547abdcc7a0c01e3499696be052230be28184fda24f`
+  - size: 1650 bytes
+  - sha256: `c05b5495962f24a4ec352c55aa7dbea962601fafd40d4b192189dbe1978de477`
 - `docs/repo_sync_runbook.md`
-  - size: 2144 bytes
-  - sha256: `727b09f853e48102bc0a256e596cce4f813891231347d938e6a4040afcca3e49`
+  - size: 2462 bytes
+  - sha256: `47c6f4865d2392e9bbbeee52490c1dff8a322cc613ee45a5db2c96046be83bdc`
+- `docs/tasker_macrodroid_plan.md`
+  - size: 2434 bytes
+  - sha256: `0c60251d762442b6f9596fe44f5a7ab730fc5f6f5faec30e21814443a6fa19cf`
 - `scripts/add_remotes.sh`
-  - size: 735 bytes
-  - sha256: `24a4ed684b935a533facce77708d83a49e74af7d6bab29f6fdb04add2603e284`
+  - size: 867 bytes
+  - sha256: `02ce3cdceda47c087afb0193a05d32bcb8d71d2f304c181f5f8a26308ca486be`
+- `scripts/build_bootanimation_zip.sh`
+  - size: 2300 bytes
+  - sha256: `e1e0024e7c840a8b6657c97b40fb112057771cf6a25caa778a31390919fb4f0a`
+- `scripts/common.sh`
+  - size: 1386 bytes
+  - sha256: `56a4cfbf9458776f9b25d4ab0736efe61b535dab0949664b1f0279ccec1591d7`
+- `scripts/disable_module_adb.sh`
+  - size: 627 bytes
+  - sha256: `2014300afdb2af0512e9111c08ead3095e2802d9f26610e5673bb6a3978c0a7a`
+- `scripts/enable_module_adb.sh`
+  - size: 633 bytes
+  - sha256: `5f72dc1781ed2bf65b3ff543f1a3f88f6981bf76b2766a970c7732caf6bcce34`
+- `scripts/install_module_adb.sh`
+  - size: 1281 bytes
+  - sha256: `3fb3b6a766272d6f7053c2fe8c46fd2acbc80fdc72bd210143fa745fe440fa1c`
+- `scripts/package_magisk_module.sh`
+  - size: 2631 bytes
+  - sha256: `26681f5392b8fb83cce9d59379391771cd9a51f74baf61d614fb2d17b3c04737`
+- `scripts/pixelctl.sh`
+  - size: 6102 bytes
+  - sha256: `43c884f326f9723daa17ae4030084cc648e501273ed95811d7fd0f3104c8ea3c`
+- `scripts/reboot_and_check_adb.sh`
+  - size: 1433 bytes
+  - sha256: `aec21f64a3a9e844eeb89691334a041ba3452bcc9a438b197d1a895f5cfd6f90`
 - `scripts/sync_git.sh`
-  - size: 1391 bytes
-  - sha256: `7c0ce99bc170f91528f1509625b9d0ba9429c592e4dc6255e19ae8b4a008a779`
+  - size: 1452 bytes
+  - sha256: `dee8395a518ae57b90d9df86428aa642aacd39f06026398880d3ec673f3a2162`
 - `scripts/sync_to_obsidian.sh`
-  - size: 944 bytes
-  - sha256: `8b72b359a350d59c627f3e77cc939ffbea0986cdd142d25c384e1b754b2c8267`
+  - size: 1634 bytes
+  - sha256: `74d9f1510ca9611785ce70eaddf1516d964dddc62a09d4848a0ddc0305d60b32`
+- `scripts/verify_module_adb.sh`
+  - size: 1052 bytes
+  - sha256: `51720927da05ed69d28165cc5789f5533615e58f15c088447e955005d8e343f0`
 - `scripts/write_manifest.sh`
-  - size: 537 bytes
-  - sha256: `c83e9b0063e3af3d1e9c46af8bb764fa78d3f11623ea64be7c9776e8da99fbf9`
+  - size: 974 bytes
+  - sha256: `7ebfed5ea15da44950a29b809e585cc7a76a737a9f4ba25d28a38d5bc6100fca`

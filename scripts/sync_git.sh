@@ -12,27 +12,27 @@ echo
 echo "Current branch: $BRANCH"
 
 echo
-echo "=== Push GitHub ==="
-if git remote get-url github >/dev/null 2>&1; then
+echo "=== Push GitHub/main ==="
+if git remote get-url main >/dev/null 2>&1; then
   configured=$((configured + 1))
-  if git push -u github "$BRANCH"; then
-    echo "GitHub push succeeded."
+  if git push -u main "$BRANCH"; then
+    echo "GitHub/main push succeeded."
   else
-    echo "GitHub push failed."
+    echo "GitHub/main push failed."
     failed=$((failed + 1))
   fi
 else
-  echo "No github remote configured."
+  echo "No main remote configured for GitHub."
 fi
 
 echo
-echo "=== Push Codeberg ==="
+echo "=== Push Codeberg/codeberg ==="
 if git remote get-url codeberg >/dev/null 2>&1; then
   configured=$((configured + 1))
   if git push -u codeberg "$BRANCH"; then
-    echo "Codeberg push succeeded."
+    echo "Codeberg/codeberg push succeeded."
   else
-    echo "Codeberg push failed."
+    echo "Codeberg/codeberg push failed."
     failed=$((failed + 1))
   fi
 else
@@ -41,7 +41,7 @@ fi
 
 echo
 if [ "$configured" -eq 0 ]; then
-  echo "No github or codeberg remotes are configured."
+  echo "No GitHub/main or Codeberg/codeberg remotes are configured."
   echo "Add them with:"
   echo
   echo "GITHUB_URL=\"git@github.com:USERNAME/cerberus-mgm-boot.git\" \\"

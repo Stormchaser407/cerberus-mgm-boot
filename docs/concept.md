@@ -1,4 +1,18 @@
+---
+project: Cerberus MGM Boot
+type: project-doc
+status: active
+tags:
+  - cerberus
+  - magisk
+  - boot-animation
+  - rooted-pixel
+  - art-direction
+---
+
 # Cerberus MGM Boot — Concept
+
+Related docs: [[frame_plan]], [[prompt_bank]], [[project_scope]]
 
 ## Core Image
 
