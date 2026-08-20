@@ -1,7 +1,19 @@
+# Archive notice — 2026-08-19
+
+**Lifecycle:** `reference`  
+**Disposition:** archive-ready historical experiment  
+**Reason:** this rooted/Magisk boot-animation project reflects an earlier mobile configuration and is not part of the current locked/rootless Endgame Pixel baseline.  
+**Current mobile authority:** `Stormchaser407/endgame-pixel`.  
+**Preservation:** original project documentation and Git history remain intact below; nothing is deleted by this notice.
+
+This repository is frozen as historical creative/mobile research and may be placed under GitHub's repository archive flag. It must not be interpreted as current Pixel configuration doctrine.
+
+---
+
 ---
 project: Cerberus MGM Boot
 type: readme
-status: active
+status: historical-reference
 tags:
   - cerberus
   - magisk
@@ -27,7 +39,7 @@ A Cerberus-themed riff on the old movie-studio lion intro:
 
 ## Target Device
 
-Current target:
+Historical target:
 
 - Google Pixel 10 Pro XL
 - Codename: mustang
